@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     digital_twin.run(strategy, 
                      render=True, 
-                     real_time=True, 
+                     real_time=False, 
                      use_disturbances=False,
                      noise=False)
     
