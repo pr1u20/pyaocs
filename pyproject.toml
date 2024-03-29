@@ -7,7 +7,7 @@ packages = ["pyaocs"]
 
 [project]
 name = "pyaocs"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
     { name="Pedro", email="pr1u20@soton.ac.uk" },
 ]
