@@ -48,7 +48,7 @@ class SatelliteEnv():
             self.pb.setAdditionalSearchPath(pybullet_data.getDataPath()) #optionally
             self.pb.setGravity(0,0,0)
             planeId = self.pb.loadURDF("plane.urdf") # creates the square plane in simulation.
-            self.boxId = self.pb.loadURDF("pyaocs/urdf_models/cylinder.urdf") # load the object and set the pos and orientation
+            self.boxId = self.pb.loadURDF(os.path.join("pyaocs", "urdf_models", "cylinder.urdf")) # load the object and set the pos and orientation
 
         self.initialize()
 
