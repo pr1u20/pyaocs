@@ -5,9 +5,12 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["pyaocs"]
 
+[tool.setuptools.package_data]
+pyaocs = ["urdf_models/*.urdf"]
+
 [project]
 name = "pyaocs"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
     { name="Pedro", email="pr1u20@soton.ac.uk" },
 ]
