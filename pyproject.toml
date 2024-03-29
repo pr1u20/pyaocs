@@ -7,11 +7,16 @@ packages = ["pyaocs"]
 
 [project]
 name = "pyaocs"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
     { name="Pedro", email="pr1u20@soton.ac.uk" },
 ]
 description = "Satellite Digital Twin to test control strategies."
+dependencies = [
+    "numpy",
+    "pybullet",
+    "matplotlib"
+]
 readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.9"
