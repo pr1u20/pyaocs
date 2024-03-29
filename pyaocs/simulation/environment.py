@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pyaocs.utils import Quaternion_to_Euler321
 import os
+from importlib.resources import files
 
 from pyaocs.simulation.non_linear_equations import NonLinearPropagator
 from pyaocs import parameters as param
@@ -48,7 +49,8 @@ class SatelliteEnv():
             self.pb.setAdditionalSearchPath(pybullet_data.getDataPath()) #optionally
             self.pb.setGravity(0,0,0)
             planeId = self.pb.loadURDF("plane.urdf") # creates the square plane in simulation.
-            self.boxId = self.pb.loadURDF(os.path.join("pyaocs", "urdf_models", "cylinder.urdf")) # load the object and set the pos and orientation
+            urdf_path = files('pyaocs').joinpath('urdf_models/cylinder.urdf')
+            self.boxId = self.pb.loadURDF(str(urdf_path)) # load the object and set the pos and orientation
 
         self.initialize()
 
