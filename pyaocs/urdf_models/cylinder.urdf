@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<robot name="myfirst">
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.3" radius="0.15"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.1 0.1 0.1 0.6"/>
+            </material>
+        </visual>
+    </link>
+
+    <link name="thruster_1">
+        <visual>
+            <geometry>
+                <cylinder length="0.1" radius="0.01"/>
+            </geometry>
+            <material name="green">
+                <color rgba="0 1 0.1 0.6"/>
+            </material>
+            <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+        </visual>
+    </link>
+
+    <joint name="thruster_1_joint" type="revolute">
+    	<parent link="base_link"/>
+    	<child link="thruster_1"/>
+    	<origin xyz="-0.15 0 0" rpy="0 0 0"/>
+       	<limit lower="-0.5" upper="0.5" effort="10" velocity="3"/>
+        <axis xyz="0 0 1"/>
+	</joint>
+
+    <link name="thruster_2">
+        <visual>
+            <geometry>
+                <cylinder length="0.1" radius="0.01"/>
+            </geometry>
+            <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+        </visual>
+    </link>
+
+    <joint name="thruster_2_joint" type="revolute">
+    	<parent link="base_link"/>
+    	<child link="thruster_2"/>
+    	<origin xyz="0.15 0 0" rpy="0 0 0"/>
+       	<limit lower="-0.5" upper="0.5" effort="10" velocity="3"/>
+        <axis xyz="0 0 1"/>
+	</joint>
+	
+</robot>

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyaocs"
+version = "0.0.1"
+authors = [
+    { name="Pedro", email="pr1u20@soton.ac.uk" },
+]
+description = "Satellite Digital Twin to test control strategies."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pr1u20/AOCS-digital-twin"
+"Bug Tracker" = "https://github.com/pr1u20/AOCS-digital-twin/issues"
