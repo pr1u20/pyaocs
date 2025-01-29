@@ -1,6 +1,6 @@
 # PyAOCS
 
-**PyAOCS** is a high-fidelity satellite simulation package designed for developing and testing **Attitude and Orbit Control System (AOCS)** algorithms. This Python package provides a realistic environment for engineers and researchers to experiment with satellite dynamics, making it a valuable tool for academic and industrial applications. PyAOCS was publicly released to support engineers in developing control algorithms and competing in the **AOCS Challenge**.
+**PyAOCS** is a high-fidelity satellite simulation package designed for developing and testing **Attitude and Orbit Control Systems (AOCS)**. This Python package provides a realistic environment for engineers and researchers to experiment with satellite dynamics, making it a valuable tool for academic and industrial applications. PyAOCS was publicly released to support engineers in developing control algorithms and competing in the **AOCS Challenge**.
 
 ## Features
 
